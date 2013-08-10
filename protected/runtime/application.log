@@ -56,3 +56,465 @@ Stack trace:
 REQUEST_URI=/index.php?r=site/dealer
 HTTP_REFERER=http://luxgen-yii/index.php
 ---
+2013/08/10 13:02:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "technology_advanced".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('technology_adva...')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('technology_adva...')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/technology...')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/technology_advanced
+HTTP_REFERER=http://luxgen-yii/
+---
+2013/08/10 13:08:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "technology_advanced".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('technology_adva...')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('technology_adva...')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/technology...')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/technology_advanced
+HTTP_REFERER=http://luxgen-yii/
+---
+2013/08/10 13:08:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://luxgen-yii/site/technology_advanced
+---
+2013/08/10 13:11:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sssd".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sssd')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sssd
+---
+2013/08/10 13:12:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sssd".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sssd')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sssd
+---
+2013/08/10 13:43:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "brand_introduction".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('brand_introduct...')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('brand_introduct...')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/brand_intr...')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/brand_introduction
+HTTP_REFERER=http://luxgen-yii/sssd
+---
+2013/08/10 13:46:12 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "brand_introduction".' in /usr/share/php5/libs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(782): CController->renderPartial('brand_introduct...', NULL, true)
+#1 /home/leadert/webserver/luxgen-yii/www/protected/controllers/Site/BrandIntroductionAction.php(12): CController->render('brand_introduct...')
+#2 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): BrandIntroductionAction->run()
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(BrandIntroductionAction))
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(BrandIntroductionAction), Array)
+#6 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('brand_introduct...')
+#7 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/brand_intr...')
+#8 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/brand_introduction
+HTTP_REFERER=http://luxgen-yii/sssd
+---
+2013/08/10 14:01:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/about
+HTTP_REFERER=http://luxgen-yii/site/brand_introduction
+---
+2013/08/10 14:10:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chronicles".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chronicles')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/chronicles/
+HTTP_REFERER=http://luxgen-yii/site/about
+---
+2013/08/10 14:13:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chronicles".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chronicles')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/chronicles/
+HTTP_REFERER=http://luxgen-yii/site/about
+---
+2013/08/10 14:14:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chronicles".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chronicles')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/chronicles/
+HTTP_REFERER=http://luxgen-yii/site/about
+---
+2013/08/10 14:15:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chronicles".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chronicles')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/chronicles/
+HTTP_REFERER=http://luxgen-yii/site/about
+---
+2013/08/10 14:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chronicles".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('chronicles')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/chronicles/
+---
+2013/08/10 14:18:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('about')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/about/
+HTTP_REFERER=http://luxgen-yii/site/chronicles/
+---
+2013/08/10 14:18:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "SiteController".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://luxgen-yii/site/chronicles/
+---
+2013/08/10 14:35:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "technology_advanced".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('technology_adva...')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('technology_adva...')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/technology...')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/technology_advanced
+HTTP_REFERER=http://luxgen-yii/site/brand_introduction
+---
+2013/08/10 14:50:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "technology_advanced".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('technology_adva...')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('technology_adva...')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/technology...')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/technology_advanced
+HTTP_REFERER=http://luxgen-yii/site/brand_introduction
+---
+2013/08/10 15:17:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "worldwidesites".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('worldwidesites')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('worldwidesites')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/worldwides...')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/worldwidesites
+HTTP_REFERER=http://luxgen-yii/site/technology_advanced
+---
+2013/08/10 15:22:24 [error] [php] include(WorldwideSitesAction.php): failed to open stream: No such file or directory (/usr/share/php5/libs/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/YiiBase.php(204): spl_autoload_call()
+#1 /usr/share/php5/libs/yii/framework/web/CController.php(440): createComponent()
+#2 /usr/share/php5/libs/yii/framework/web/CController.php(417): SiteController->createActionFromMap()
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(259): SiteController->createAction()
+#4 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#5 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/worldwidesites
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/10 15:22:52 [error] [php] include(WorldwideSitesAction.php): failed to open stream: No such file or directory (/usr/share/php5/libs/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/YiiBase.php(204): spl_autoload_call()
+#1 /usr/share/php5/libs/yii/framework/web/CController.php(440): createComponent()
+#2 /usr/share/php5/libs/yii/framework/web/CController.php(417): SiteController->createActionFromMap()
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(259): SiteController->createAction()
+#4 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#5 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/worldwidesites
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/10 15:23:15 [error] [php] include(WorldwideSitesAction.php): failed to open stream: No such file or directory (/usr/share/php5/libs/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/YiiBase.php(204): spl_autoload_call()
+#1 /usr/share/php5/libs/yii/framework/web/CController.php(440): createComponent()
+#2 /usr/share/php5/libs/yii/framework/web/CController.php(417): SiteController->createActionFromMap()
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(259): SiteController->createAction()
+#4 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#5 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/worldwidesites
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/10 15:27:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "copyright".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('copyright')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('copyright')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/copyright')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/copyright
+HTTP_REFERER=http://luxgen-yii/site/worldwidesites
+---
+2013/08/10 15:31:57 [error] [exception.CException] exception 'CException' with message 'Alias "application.controllers.Site.CopyrightAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /usr/share/php5/libs/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/YiiBase.php(196): YiiBase::import('application.con...', true)
+#1 /usr/share/php5/libs/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(SiteController), 'copyright')
+#2 /usr/share/php5/libs/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'copyright', 'copyright')
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(259): CController->createAction('copyright')
+#4 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('copyright')
+#5 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/copyright')
+#6 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/site/copyright
+HTTP_REFERER=http://luxgen-yii/site/worldwidesites
+---
+2013/08/10 15:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "privacy".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('privacy')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('privacy')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/privacy')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/privacy
+HTTP_REFERER=http://luxgen-yii/site/copyright
+---
+2013/08/10 15:39:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test_drive".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('test_drive')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('test_drive')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/test_drive')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/test_drive
+HTTP_REFERER=http://luxgen-yii/
+---
+2013/08/10 15:43:33 [error] [exception.CException] exception 'CException' with message 'Alias "application.controllers.Site.TestDriveAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /usr/share/php5/libs/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/YiiBase.php(196): YiiBase::import('application.con...', true)
+#1 /usr/share/php5/libs/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(SiteController), 'test_drive')
+#2 /usr/share/php5/libs/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'test_drive', 'test_drive')
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(259): CController->createAction('test_drive')
+#4 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('test_drive')
+#5 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/test_drive')
+#6 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/site/test_drive
+HTTP_REFERER=http://luxgen-yii/
+---
+2013/08/10 15:46:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "suv".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('suv')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('suv')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/suv')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/suv
+HTTP_REFERER=http://luxgen-yii/site/test_drive
+---
+2013/08/10 15:50:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dealer".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('dealer')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('dealer')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dealer')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/dealer
+HTTP_REFERER=http://luxgen-yii/site/suv
+---
+2013/08/10 15:59:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "news".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('news')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('news')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/news')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/news
+HTTP_REFERER=http://luxgen-yii/site/dealer
+---
+2013/08/10 16:03:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('contact')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://luxgen-yii/site/news
+---
+2013/08/10 16:14:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gallery".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('gallery')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('gallery')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/gallery')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/gallery
+HTTP_REFERER=http://luxgen-yii/
+---
+2013/08/10 16:20:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/news
+HTTP_REFERER=http://luxgen-yii/gallery
+---
+2013/08/10 16:31:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "press".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('press')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('press')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news/press')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/press
+HTTP_REFERER=http://luxgen-yii/news/?year=2013
+---
+2013/08/10 16:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('id')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('id')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news/id/11')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/id/11/
+HTTP_REFERER=http://luxgen-yii/news/?year=2013
+---
+2013/08/10 16:32:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('id')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('id')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news/id/11')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/id/11/
+HTTP_REFERER=http://luxgen-yii/news/?year=2013
+---
+2013/08/10 16:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news/view/id/10')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/view/id/10
+HTTP_REFERER=http://luxgen-yii/news/?year=2013
+---
+2013/08/10 16:43:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "press".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('press')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('press')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news/press')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/news/press
+HTTP_REFERER=http://luxgen-yii/news/?year=2013
+---
+2013/08/10 16:43:53 [error] [exception.CException] exception 'CException' with message 'Alias "application.controllers.PressAboutUs.IndexAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /usr/share/php5/libs/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/YiiBase.php(196): YiiBase::import('application.con...', true)
+#1 /usr/share/php5/libs/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(Press_about_usController), 'index')
+#2 /usr/share/php5/libs/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'index', 'index')
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(259): CController->createAction('')
+#4 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#5 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('press_about_us')
+#6 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/press_about_us
+HTTP_REFERER=http://luxgen-yii/news/?year=2013
+---
+2013/08/10 16:47:15 [error] [exception.CException] exception 'CException' with message 'Press_about_usController cannot find the requested view "index".' in /usr/share/php5/libs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /home/leadert/webserver/luxgen-yii/www/protected/controllers/PressAboutUs/IndexAction.php(12): CController->render('index')
+#2 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): IndexAction->run()
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(IndexAction))
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#6 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('press_about_us')
+#8 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/press_about_us
+HTTP_REFERER=http://luxgen-yii/news/?year=2013
+---
+2013/08/10 16:56:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('contact')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('press_about_us/...')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/press_about_us/contact
+HTTP_REFERER=http://luxgen-yii/press_about_us
+---
+2013/08/10 16:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "models/suv".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('models/suv')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/models/suv
+HTTP_REFERER=http://luxgen-yii/site/contact
+---
+2013/08/10 17:00:39 [error] [exception.CException] exception 'CException' with message 'Alias "application.controllers.PressAboutUs.ViewAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /usr/share/php5/libs/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/YiiBase.php(196): YiiBase::import('application.con...', true)
+#1 /usr/share/php5/libs/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(Press_about_usController), 'view')
+#2 /usr/share/php5/libs/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'view', 'view')
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(259): CController->createAction('view')
+#4 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#5 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('press_about_us/...')
+#6 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/press_about_us/view/id/15
+HTTP_REFERER=http://luxgen-yii/press_about_us
+---

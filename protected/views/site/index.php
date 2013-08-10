@@ -5,7 +5,7 @@
 ?>
 
 <?php
-    Yii::app()->clientScript->registerCssFile($this->baseAssets . '/css/index.css');
+    Yii::app()->clientScript->registerCssFile($this->baseAssets.'/css/index.css');
 ?>
 <div class="midWrap">
     <div class="IndexContent" style="margin-top: 77px;">
