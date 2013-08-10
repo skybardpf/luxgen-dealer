@@ -1,0 +1,58 @@
+2013/08/10 10:57:31 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/leadert/webserver/luxgen-yii/www/public/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /usr/share/php5/libs/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/leadert/w...')
+#1 /usr/share/php5/libs/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /usr/share/php5/libs/yii/framework/web/CClientScript.php(510): CAssetManager->publish('/usr/share/php5...')
+#3 /usr/share/php5/libs/yii/framework/web/CClientScript.php(547): CClientScript->getCoreScriptUrl()
+#4 /usr/share/php5/libs/yii/framework/web/CClientScript.php(348): CClientScript->getPackageBaseUrl('jquery')
+#5 /usr/share/php5/libs/yii/framework/web/CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(351): CClientScript->render('<!DOCTYPE html ...')
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(788): CController->processOutput('<!DOCTYPE html ...')
+#8 /home/leadert/webserver/luxgen-yii/www/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#9 /usr/share/php5/libs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#10 /usr/share/php5/libs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#14 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://luxgen-yii/
+---
+2013/08/10 12:03:44 [error] [exception.CException] exception 'CException' with message 'The asset "/home/leadert/webserver/luxgen-yii/www/protected/assets" to be published does not exist.' in /usr/share/php5/libs/yii/framework/web/CAssetManager.php:257
+Stack trace:
+#0 /home/leadert/webserver/luxgen-yii/www/protected/components/Controller.php(38): CAssetManager->publish('/home/leadert/w...', false, -1, true)
+#1 /usr/share/php5/libs/yii/framework/web/CController.php(306): Controller->beforeAction(Object(CInlineAction))
+#2 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#5 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#6 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/
+---
+2013/08/10 12:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test_drive".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('test_drive')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('test_drive')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/test_drive')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/test_drive
+HTTP_REFERER=http://luxgen-yii/index.php
+---
+2013/08/10 12:33:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dealer".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('dealer')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('dealer')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dealer')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/dealer
+HTTP_REFERER=http://luxgen-yii/index.php
+---
