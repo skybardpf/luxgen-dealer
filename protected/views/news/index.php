@@ -1,7 +1,12 @@
 <?php
 /**
- * @var NewsController $this
+ * @var NewsController  $this
+ * @var News[]          $data
  */
+?>
+
+<?php
+    Yii::app()->clientScript->registerCssFile($this->baseAssets . '/css/style.timeline.css');
 ?>
 
 <div class="midWrap">
@@ -42,49 +47,35 @@
                         <li sid="12" class="month MonthBtn"><span class="month12">12</span></li>
                     </ul>
                 </div>
+
                 <div id="contentFont" class="fontNormal">
                     <div class="ContData">
                         <ul class="ContTimeline both">
-                            <li class="ContTimelineList">
-                                <span sid="4" class="TimelineYear" id="monthcont3">Апр.</span>
-                                <ul class="TimelineBox">
-                                    <a href="<?= $this->createUrl('view', array('id' => '11')); ?>">
-                                        <li class="ContTimelineTop">
-                                            <time class="TimelineDate">2013.04.17</time>
-                                            <h5 class="TimelineTitle">Участие компании LUXGEN во Вьетнамской
-                                                автовыставке-2012 </h5>
-                                        </li>
-                                        <li><img src="<?= $this->baseAssets.'/img/news/small/448772.big.jpg';?>"></li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li class="ContTimelineList">
-                                <span sid="9" class="TimelineYear" id="monthcont8">Сен.</span>
-                                <ul class="TimelineBox">
-                                    <a href="<?= $this->createUrl('view', array('id' => '9')); ?>">
-                                        <li class="ContTimelineTop">
-                                            <time class="TimelineDate">2012.09.28</time>
-                                            <h5 class="TimelineTitle">Участие компании LUXGEN во Вьетнамской
-                                                автовыставке-2012</h5>
-                                        </li>
-                                        <li><img src="<?= $this->baseAssets.'/img/news/small/20121009105509253.jpg';?>"></li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li class="ContTimelineList">
-                                <span sid="5" class="TimelineYear" id="monthcont4">Май</span>
-                                <ul class="TimelineBox">
-                                    <a href="<?= $this->createUrl('view', array('id' => '10')); ?>">
-                                        <li class="ContTimelineTop">
-                                            <time class="TimelineDate">2012.05.20</time>
-                                            <h5 class="TimelineTitle">LUXGEN объявляет об открытии представительства в
-                                                Султанате Оман</h5>
-                                        </li>
-                                        <li><img src="<?= $this->baseAssets.'/img/news/small/20121009105421860.jpg';?>"></li>
-                                    </a>
-                                </ul>
-                            </li>
+                            <?php
+                            foreach($data as $news){
+                                $time = strtotime($news->created);
+                                $created = date('Y.m.d', $time);
+                                $month_num = date('n', $time);
+                                $month_name = date('M', $time);
+                                ?>
 
+                                <li class="ContTimelineList">
+                                    <span sid="<?= $month_num; ?>" class="TimelineYear" id="<?= 'monthcont' . $month_num; ?>"><?= $month_name; ?></span>
+                                    <ul class="TimelineBox">
+                                        <a href="<?= $this->createUrl('view', array('id' => $news->primaryKey)); ?>">
+                                            <li class="ContTimelineTop">
+                                                <time class="TimelineDate"><?= $created; ?></time>
+                                                <h5 class="TimelineTitle"><?= $news->title; ?></h5>
+                                            </li>
+                                            <li><img src="<?= $this->baseAssets.'/img/news/'.$news->primaryKey.'/'.$news->image; ?>">
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </li>
+
+                                <?php
+                            }
+                            ?>
                         </ul>
                     </div>
                 </div>

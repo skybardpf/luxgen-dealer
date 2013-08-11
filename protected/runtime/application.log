@@ -518,3 +518,333 @@ Stack trace:
 REQUEST_URI=/press_about_us/view/id/15
 HTTP_REFERER=http://luxgen-yii/press_about_us
 ---
+2013/08/10 20:55:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gallery/view/id...')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gallery/view/id/1
+HTTP_REFERER=http://luxgen-yii/gallery/images
+---
+2013/08/10 20:56:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gallery/view/id...')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gallery/view/id/1
+HTTP_REFERER=http://luxgen-yii/gallery/images
+---
+2013/08/10 21:28:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "download".' in /usr/share/php5/libs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(270): CController->missingAction('download')
+#1 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('download')
+#2 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gallery/downloa...')
+#3 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gallery/download/id/3
+HTTP_REFERER=http://luxgen-yii/gallery/view/id/3
+---
+2013/08/10 21:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Media/MediaColorBox/P/fb755f4c-3845-4da5-8056-432f86c055b6".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Media/MediaColo...')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Media/MediaColorBox/P/fb755f4c-3845-4da5-8056-432f86c055b6
+HTTP_REFERER=http://luxgen-yii/gallery/view/id/16
+---
+2013/08/10 21:46:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Media/MediaColorBox/P/38452d7c-22f2-436a-932a-8ad8334ad266".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Media/MediaColo...')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Media/MediaColorBox/P/38452d7c-22f2-436a-932a-8ad8334ad266
+HTTP_REFERER=http://luxgen-yii/gallery/view/id/17
+---
+2013/08/10 21:47:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Media/MediaColorBox/P/38452d7c-22f2-436a-932a-8ad8334ad266".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Media/MediaColo...')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Media/MediaColorBox/P/38452d7c-22f2-436a-932a-8ad8334ad266
+HTTP_REFERER=http://luxgen-yii/gallery/view/id/22
+---
+2013/08/11 10:40:37 [error] [exception.CException] exception 'CException' with message 'NewsController cannot find the requested view "view".' in /usr/share/php5/libs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(782): CController->renderPartial('view', NULL, true)
+#1 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/ViewAction.php(12): CController->render('view')
+#2 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): ViewAction->run()
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(ViewAction))
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(ViewAction), Array)
+#6 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#7 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news/view/id/11')
+#8 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/news/view/id/11
+HTTP_REFERER=http://luxgen-yii/news
+---
+2013/08/11 11:12:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show = 1' at line 1. The SQL statement executed was: SELECT * FROM `news` `t` WHERE show = :show.
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php (17)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/11 11:12:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show = 1' at line 1. The SQL statement executed was: SELECT * FROM `news` `t` WHERE show = :show' in /usr/share/php5/libs/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php(17): CActiveRecord->findAll('show = :show', Array)
+#4 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): IndexAction->run()
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(IndexAction))
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#8 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#9 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#10 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/news
+HTTP_REFERER=http://luxgen-yii/gallery/images
+---
+2013/08/11 11:13:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show = 1' at line 1. The SQL statement executed was: SELECT * FROM `news` `t` WHERE show = :show.
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php (17)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/11 11:13:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show = 1' at line 1. The SQL statement executed was: SELECT * FROM `news` `t` WHERE show = :show' in /usr/share/php5/libs/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php(17): CActiveRecord->findAll('show = :show', Array)
+#4 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): IndexAction->run()
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(IndexAction))
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#8 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#9 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#10 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/news
+HTTP_REFERER=http://luxgen-yii/gallery/images
+---
+2013/08/11 11:13:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show = 1' at line 1. The SQL statement executed was: SELECT * FROM `news` `t` WHERE show = :show.
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php (17)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/11 11:13:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show = 1' at line 1. The SQL statement executed was: SELECT * FROM `news` `t` WHERE show = :show' in /usr/share/php5/libs/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php(17): CActiveRecord->findAll('show = :show', Array)
+#4 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): IndexAction->run()
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(IndexAction))
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#8 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#9 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#10 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/news
+HTTP_REFERER=http://luxgen-yii/gallery/images
+---
+2013/08/11 11:14:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show = 1' at line 1. The SQL statement executed was: SELECT * FROM `news` `t` WHERE show = :is_show.
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php (17)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/11 11:14:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show = 1' at line 1. The SQL statement executed was: SELECT * FROM `news` `t` WHERE show = :is_show' in /usr/share/php5/libs/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php(17): CActiveRecord->findAll('show = :is_show', Array)
+#4 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): IndexAction->run()
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(IndexAction))
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#8 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#9 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#10 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/news
+HTTP_REFERER=http://luxgen-yii/gallery/images
+---
+2013/08/11 11:52:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `news` `t` WHERE is_show = :is_show ORDER BY created DESC.
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php (20)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/11 11:52:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `news` `t` WHERE is_show = :is_show ORDER BY created DESC' in /usr/share/php5/libs/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php(20): CActiveRecord->findAll(Array, Array)
+#4 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): IndexAction->run()
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(IndexAction))
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#8 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#9 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#10 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/news
+HTTP_REFERER=http://luxgen-yii/gallery/images
+---
+2013/08/11 11:52:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `news` `t` WHERE is_show = :is_show ORDER BY created DESC.
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php (20)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/11 11:52:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `news` `t` WHERE is_show = :is_show ORDER BY created DESC' in /usr/share/php5/libs/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php(20): CActiveRecord->findAll(Array, Array)
+#4 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): IndexAction->run()
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(IndexAction))
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#8 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#9 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#10 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/news
+HTTP_REFERER=http://luxgen-yii/gallery/images
+---
+2013/08/11 11:53:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `news` `t` WHERE is_show = :is_show ORDER BY created desc.
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php (20)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/11 11:53:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT * FROM `news` `t` WHERE is_show = :is_show ORDER BY created desc' in /usr/share/php5/libs/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /usr/share/php5/libs/yii/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php(20): CActiveRecord->findAll(Array, Array)
+#4 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): IndexAction->run()
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(IndexAction))
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#8 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#9 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news')
+#10 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/news
+HTTP_REFERER=http://luxgen-yii/gallery/images
+---
+2013/08/11 12:02:42 [error] [php] A non well formed numeric value encountered (/home/leadert/webserver/luxgen-yii/www/protected/views/news/index.php:59)
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CBaseController.php(95): NewsController->renderInternal()
+#1 /usr/share/php5/libs/yii/framework/web/CController.php(869): NewsController->renderFile()
+#2 /usr/share/php5/libs/yii/framework/web/CController.php(782): NewsController->renderPartial()
+#3 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php(23): NewsController->render()
+#4 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): IndexAction->run()
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(308): IndexAction->runWithParams()
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(286): NewsController->runAction()
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(265): NewsController->runActionWithFilters()
+#8 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): NewsController->run()
+#9 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/news
+in /home/leadert/webserver/luxgen-yii/www/protected/views/news/index.php (59)
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/IndexAction.php (23)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/11 12:09:41 [error] [exception.CException] exception 'CException' with message 'NewsController cannot find the requested view "view".' in /usr/share/php5/libs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(782): CController->renderPartial('view', NULL, true)
+#1 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/ViewAction.php(12): CController->render('view')
+#2 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): ViewAction->run()
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(ViewAction))
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(ViewAction), Array)
+#6 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#7 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news/view/id/6')
+#8 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/news/view/id/6
+HTTP_REFERER=http://luxgen-yii/news
+---
+2013/08/11 12:13:17 [error] [exception.CException] exception 'CException' with message 'NewsController cannot find the requested view "view".' in /usr/share/php5/libs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(782): CController->renderPartial('view', NULL, true)
+#1 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/ViewAction.php(12): CController->render('view')
+#2 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): ViewAction->run()
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(ViewAction))
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(ViewAction), Array)
+#6 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#7 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news/view/id/6')
+#8 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/news/view/id/6
+HTTP_REFERER=http://luxgen-yii/news
+---
+2013/08/11 12:14:45 [error] [exception.CException] exception 'CException' with message 'NewsController cannot find the requested view "view".' in /usr/share/php5/libs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(782): CController->renderPartial('view', NULL, true)
+#1 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/ViewAction.php(12): CController->render('view')
+#2 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): ViewAction->run()
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(ViewAction))
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(ViewAction), Array)
+#6 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#7 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news/view/id/6')
+#8 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/news/view/id/6
+HTTP_REFERER=http://luxgen-yii/news
+---
+2013/08/11 12:18:06 [error] [exception.CException] exception 'CException' with message 'NewsController cannot find the requested view "view".' in /usr/share/php5/libs/yii/framework/web/CController.php:878
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#1 /home/leadert/webserver/luxgen-yii/www/protected/controllers/News/ViewAction.php(27): CController->render('view', Array)
+#2 [internal function]: ViewAction->run('6')
+#3 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ViewAction), Array)
+#4 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(74): CAction->runWithParamsInternal(Object(ViewAction), Object(ReflectionMethod), Array)
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(ViewAction))
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(ViewAction), Array)
+#8 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('news/view/id/6')
+#10 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/news/view/id/6
+HTTP_REFERER=http://luxgen-yii/news
+---
+2013/08/11 13:47:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "press".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('press')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/press/
+HTTP_REFERER=http://luxgen-yii/news/view/id/4
+---
+2013/08/11 15:49:36 [error] [exception.CException] exception 'CException' with message 'Alias "application.controllers.PressAboutUs.ViewAction" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /usr/share/php5/libs/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/YiiBase.php(196): YiiBase::import('application.con...', true)
+#1 /usr/share/php5/libs/yii/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(Press_about_usController), 'view')
+#2 /usr/share/php5/libs/yii/framework/web/CController.php(417): CController->createActionFromMap(Array, 'view', 'view')
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(259): CController->createAction('view')
+#4 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#5 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('press_about_us/...')
+#6 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#7 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/press_about_us/view/id/6
+HTTP_REFERER=http://luxgen-yii/press_about_us
+---

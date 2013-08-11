@@ -1,6 +1,7 @@
 <?php
 /**
- * @var NewsController $this
+ * @var Press_about_usController    $this
+ * @var PressAboutUs[]              $data
  */
 ?>
 
@@ -32,86 +33,43 @@
             <div id="contentFont" class="fontNormal">
                 <div class="ContData press">
                     <ul class="ContTimeline both">
-                        <li class="ContTimelineList ContTimelineLeft">
-                            <span class="TimelineYear">2013</span>
-                            <ul class="TimelineBox">
+                        <?php
+                            foreach($data as $article){
+                                $time = strtotime($article->created);
+                                $created = date('Y.m.d', $time);
+                                $year = date('Y', $time);
+                                if ($article->article_type == PressAboutUs::ARTICLE_TYPE_LINK){
+                                    $link = $article->link;
+                                } elseif ($article->article_type == PressAboutUs::ARTICLE_TYPE_FILE){
+                                    $link = $this->createUrl($article->file);
+                                } elseif ($article->article_type == PressAboutUs::ARTICLE_TYPE_TEXT){
+                                    $link = $this->createUrl('view', array('id' => $article->primaryKey));
+                                } else {
+                                    continue;
+                                }
+//                                var_dump($link);
+//                                var_dump($article->article_type);
+                            ?>
+                                <li class="ContTimelineList ContTimelineLeft">
+                                    <span class="TimelineYear"><?= $year; ?></span>
+                                    <ul class="TimelineBox">
 
-                                <li class="ContTimelineTop press">
-                                    <time class="TimelineDate">2013.06.25</time>
-                                    <h5 class="TimelineTitle">werwer</h5>
-                                    <h5 class="TimelineTitle grey">А это описание или заголовок источника</h5>
+                                        <li class="ContTimelineTop press">
+                                            <time class="TimelineDate"><?= $created; ?></time>
+                                            <h5 class="TimelineTitle"><?= $article->title; ?></h5>
+                                            <h5 class="TimelineTitle grey"><?= $article->source_of_article; ?></h5>
+                                        </li>
+                                        <li class="lefter">
+                                        <p><?= $article->annotation; ?></p>
+                                        </li>
+                                        <li class="lefter" style="margin-bottom: 10px;">
+                                            <a class="blue_link" href="<?= $link    ; ?>">Статья целиком</a>
+                                        <li>
+                                    </ul>
                                 </li>
-                                <li class="lefter"><p>
-                                        werwerwer</p>
-                                </li>
-                                <li class="lefter" style="margin-bottom: 10px;">
-                                    <a class="blue_link" href="<?= $this->createUrl('view', array('id' => '15')); ?>">Статья целиком</a>
-                                <li>
-                            </ul>
-                        </li>
-                        <li class="ContTimelineList ContTimelineMargin ContTimelineRight">
-                            <ul class="TimelineBox">
-
-                                <li class="ContTimelineTop press">
-                                    <time class="TimelineDate">2013.06.21</time>
-                                    <h5 class="TimelineTitle">Тест ссылки</h5>
-                                    <h5 class="TimelineTitle grey">нет такого</h5>
-                                </li>
-                                <li class="lefter">
-                                    <p>вафвВввыфваыфафываф</p>
-                                </li>
-                                <li class="lefter" style="margin-bottom: 10px;">
-                                    <a class="blue_link" href="http://google.ru">Статья целиком</a>
-                                <li>
-                            </ul>
-                        </li>
-                        <li class="ContTimelineList ContTimelineLeft">
-                            <ul class="TimelineBox">
-
-                                <li class="ContTimelineTop press">
-                                    <time class="TimelineDate">2013.06.21</time>
-                                    <h5 class="TimelineTitle">Новая с файлом</h5>
-                                    <h5 class="TimelineTitle grey">совсем новый файл</h5>
-                                </li>
-                                <li class="lefter"><p>Тот самый файл</p>
-                                </li>
-                                <li class="lefter" style="margin-bottom: 10px;">
-                                    <a class="blue_link" href="<?= $this->baseAssets.'/docs/press_about_us/MLP-Wallpaper-my-little-pony-friendship-is-magic-oc-32040152-1920-1200.jpg';?>">Статья целиком</a>
-                                <li>
-
-                            </ul>
-                        </li>
-                        <li class="ContTimelineList ContTimelineMargin ContTimelineRight">
-                            <ul class="TimelineBox">
-                                <li class="ContTimelineTop press">
-                                    <time class="TimelineDate">2013.06.21</time>
-                                    <h5 class="TimelineTitle">авываыв</h5>
-                                    <h5 class="TimelineTitle grey">ываываыв</h5>
-                                </li>
-                                <li class="lefter"><p>ываываываыва</p>
-                                </li>
-                                <li class="lefter" style="margin-bottom: 10px;">
-                                    <a class="blue_link" href="https://www.google.ru/webhp?sourceid=chrome-instant&amp;ion=1&amp;ie=UTF-8#newwindow=1&amp;sclient=psy-ab&amp;q=jquery%20radio%20button%20changed&amp;oq=&amp;gs_l=&amp;pbx=1&amp;fp=20c0d414abd5ee4a&amp;ion=1&amp;bav=on.2,or.r_qf.&amp;bvm=bv.48293060,d.bGE">Статья целиком</a>
-                                <li>
-                            </ul>
-                        </li>
-                        <li class="ContTimelineList ContTimelineLeft">
-                            <ul class="TimelineBox">
-
-                                <li class="ContTimelineTop press">
-                                    <time class="TimelineDate">2013.06.20</time>
-                                    <h5 class="TimelineTitle">Дополнительный материал</h5>
-                                    <h5 class="TimelineTitle grey">Неизвестно откуда</h5>
-                                </li>
-                                <li class="lefter">Куда идём мы с Пятачком -
-                                    Большой-большой секрет.
-                                    И не расскажем мы о нём...
-                                </li>
-                                <li class="lefter" style="margin-bottom: 10px;">
-                                    <a class="blue_link" href="<?= $this->baseAssets.'/docs/press_about_us/oshibka_copy(1371725904_601).txt';?>">Статья целиком</a>
-                                <li>
-                            </ul>
-                        </li>
+                            <?php
+                            }
+                        ?>
                     </ul>
                 </div>
             </div>

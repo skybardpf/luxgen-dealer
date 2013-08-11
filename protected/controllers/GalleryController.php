@@ -10,7 +10,10 @@ class GalleryController extends Controller
 	public function actions()
 	{
 		return array(
-            'index' => 'application.controllers.Gallery.IndexAction',
+            'images' => 'application.controllers.Gallery.ImagesAction',
+            'videos' => 'application.controllers.Gallery.VideosAction',
+
+            'view' => 'application.controllers.Gallery.ViewAction',
 		);
 	}
 }

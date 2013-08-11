@@ -7,7 +7,7 @@
     <ul>
         <li><a href="<?= $this->createUrl('/site/dealer'); ?>">Информация для дилеров</a></li>
         <li><a href="<?= $this->createUrl('/news/'); ?>">Новости</a></li>
-        <li><a href="<?= $this->createUrl('/gallery/'); ?>">Галерея</a></li>
+        <li><a href="<?= $this->createUrl('/gallery/images'); ?>">Галерея</a></li>
         <li><a href="<?= $this->createUrl('/site/contact'); ?>">Контакты</a></li>
         <li>|</li>
         <li><a href="<?= $this->createAbsoluteUrl('/site/'); ?>">Главная</a></li>

@@ -1,12 +1,15 @@
 <?php
 /**
- * @var GalleryController $this
+ * @var GalleryController   $this
+ * @var GalleryImage[]      $data
  */
 ?>
 
 <?php
     Yii::app()->clientScript->registerCssFile($this->baseAssets . '/css/style.media.css');
     Yii::app()->clientScript->registerCssFile($this->baseAssets . '/css/colorbox.css');
+
+    Yii::app()->clientScript->registerScriptFile($this->baseAssets . '/js/jquery.colorbox.js');
 ?>
 
 <div class="midWrap">
@@ -23,16 +26,23 @@
     <h3 class="title">Галерея</h3>
 </div>
 <ul>
-<li class="mediaList" rel="prettyPhoto[iframe]" href="/gallery/id/5?iframe=true&width=100%25&height=100%25">
-    <img src="/userfiles/imgs/small/04_copy(1363013042_4870).jpg">
-
-    <div class="active png" style="display: none;">
-        <ul class="Article">
-            <li class="title">LUXGEN 7 SUV</li>
-        </ul>
-    </div>
-</li>
-<li class="mediaList" rel="prettyPhoto[iframe]" href="/gallery/id/6?iframe=true&width=100%25&height=100%25">
+<?php
+    $dir = $this->baseAssets .'/img/cars/';
+    foreach ($data as $image){
+        $path = $dir . $image->car->primaryKey.'/gallery/'.$image->filename;
+        ?>
+        <li class="mediaList" rel="prettyPhoto[iframe]" href="<?= $this->createUrl('view', array('id' => $image->primaryKey)); ?>?iframe=true&width=100%25&height=100%25">
+            <img width="286" height="167" src="<?= $path; ?>">
+            <div class="active png" style="display: none;">
+                <ul class="Article">
+                    <li class="title"><?= $image->title; ?></li>
+                </ul>
+            </div>
+        </li>
+    <?php
+    }
+?>
+<!--<li class="mediaList" rel="prettyPhoto[iframe]" href="/gallery/id/6?iframe=true&width=100%25&height=100%25">
     <img src="/userfiles/imgs/small/20121011184757202.jpg">
 
     <div class="active png" style="display: none;">
@@ -247,7 +257,7 @@
             <li class="title">LUXGEN 7 SUV</li>
         </ul>
     </div>
-</li>
+</li>-->
 </ul>
 </div>
 </div>

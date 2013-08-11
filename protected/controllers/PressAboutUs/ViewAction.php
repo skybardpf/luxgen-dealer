@@ -1,13 +1,12 @@
 <?php
 /**
- * Class IndexAction
+ * Class ViewAction
  */
-class IndexAction extends CAction
+class ViewAction extends CAction
 {
-    public function run()
+    public function run($id)
     {
         $controller = $this->controller;
-        $controller->pageTitle = Yii::app()->name . ' | Пресса о нас';
 
         $criteria = new CDbCriteria;
         $criteria->condition = 'display = :display AND deleted=:deleted';
@@ -17,11 +16,17 @@ class IndexAction extends CAction
             ':deleted' => News::DELETED_NO,
         );
 
-        $data = PressAboutUs::model()->findAll($criteria);
+        $model = PressAboutUs::model()->findByPk($id, $criteria);
+        if ($model === null){
+            throw new CHttpException(500, 'Не найдена статья.');
+        }
+
+        $controller->pageTitle = Yii::app()->name . ' | Пресса о нас | ' . $model->title;
+
         $controller->render(
-            'index',
+            'view',
             array(
-                'data' => $data
+                'model' => $model
             )
         );
     }
