@@ -1,4 +1,5 @@
 <?php
+Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
@@ -8,6 +9,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Luxgen Dealers',
+    'language' => 'ru',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -16,9 +18,21 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+
+        // подключение путей из модулей
+        'application.modules.admin.AdminModule',
+        'application.modules.admin.controllers.*',
+        'application.modules.admin.models.*',
+        'application.modules.admin.components.*',
 	),
 
 	'modules'=>array(
+        'admin' => array(
+            'class' => 'application.modules.admin.AdminModule',
+            'defaultController' => 'default',
+//            'layoutPath' => dirname(__FILE__).DIRECTORY_SEPARATOR.'../modules/admin/views/layouts',
+//            'layout' => 'admin'
+        ),
 		// uncomment the following to enable the Gii tool
 		/*
 		'gii'=>array(
@@ -45,6 +59,10 @@ return array(
 			'password' => 'yfh11rjv56fy',
 			'charset' => 'utf8',
 		),
+
+        'bootstrap'=>array(
+            'class'=>'bootstrap.components.Bootstrap',
+        ),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

@@ -37,7 +37,10 @@ Yii::app()->clientScript->registerScriptFile($this->baseAssets . '/js/common.js'
 
 <div class="Wrap">
     <header>
-        <?= $this->renderPartial('//layouts/head'); ?>
+        <?php
+//        var_dump('admin layout');die;
+        $this->renderPartial('//layouts/head');
+        ?>
     </header>
 
     <?= $content; ?>
