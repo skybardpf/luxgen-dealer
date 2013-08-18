@@ -12,12 +12,12 @@ class News extends CActiveRecord
     const DELETED_YES   = 1;
     const DELETED_NO    = 0;
 
-    public $title;          // string
-    public $text;           // string
-    public $image;          // string
-    public $created;        // date
-    public $display = true; // bool
-    public $deleted = false; // bool
+    public $title;              // string
+    public $text;               // string
+    public $image;              // string
+    public $created;            // date
+    public $display = true;     // bool
+    public $deleted = false;    // bool
 
     /**
      * @static

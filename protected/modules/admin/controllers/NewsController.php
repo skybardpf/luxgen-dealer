@@ -8,6 +8,7 @@ class NewsController extends AdminController
     {
         return array(
             'index' => 'application.modules.admin.controllers.News.IndexAction',
+            'view' => 'application.modules.admin.controllers.News.ViewAction',
         );
     }
 }

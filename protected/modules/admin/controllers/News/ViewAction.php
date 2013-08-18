@@ -1,25 +1,29 @@
 <?php
 /**
- * Class IndexAction
+ * Class ViewAction
  */
-class IndexAction extends CAction
+class ViewAction extends CAction
 {
-    public function run()
+    /**
+     * @param int $id
+     */
+    public function run($id)
     {
         $controller = $this->controller;
         $controller->pageTitle = Yii::app()->name . ' | Админка | Новости';
 
-        $data = News::model()->findAllByAttributes(array(
-            'deleted' => News::DELETED_NO
-        ));
+        $model = News::model()->findByPk($id);
+        if ($model === null){
+            throw new CHttpException(500, 'Новость не найдена.');
+        }
 
         $controller->render(
             '/default/menu_tabs',
             array(
                 'tab_content' => $controller->renderPartial(
-                    'index',
+                    'view',
                     array(
-                        'data' => $data
+                        'model' => $model
                     ),
                     true
                 ),
