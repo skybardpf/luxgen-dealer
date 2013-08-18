@@ -5,7 +5,6 @@
  * @var TBActiveForm $form
  */
 
-//$this->pageTitle = Yii::app()->name . ' - Авторизация';
 $this->module->breadcrumbs = array(
     'Авторизация',
 );

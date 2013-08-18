@@ -1,12 +1,12 @@
 <?php
 /**
- * @var AdminController $this
+ * @var NewsController $this
  */
 ?>
 <?php
 $this->module->breadcrumbs = array(
     'Выход' => $this->createUrl('login/logout'),
-    'Админка',
+    'Новости',
 );
 ?>
-HOME
+Новости

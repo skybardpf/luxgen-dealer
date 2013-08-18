@@ -1,12 +1,12 @@
 <?php
 /**
- * @var AdminController $this
+ * @var Press_about_usController $this
  */
 ?>
 <?php
 $this->module->breadcrumbs = array(
     'Выход' => $this->createUrl('login/logout'),
-    'Админка',
+    'Пресса о нас',
 );
 ?>
-HOME
+Пресса о нас

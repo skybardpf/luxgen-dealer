@@ -4,6 +4,7 @@
  */
 
 Yii::app()->bootstrap->register();
+Yii::app()->clientScript->registerCssFile($this->module->baseAssets.'/css/main.css');
 ?>
 
 <!DOCTYPE HTML>

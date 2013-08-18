@@ -1,12 +1,12 @@
 <?php
 /**
- * @var AdminController $this
+ * @var Test_driveController $this
  */
 ?>
 <?php
 $this->module->breadcrumbs = array(
     'Выход' => $this->createUrl('login/logout'),
-    'Админка',
+    'Заявки на тест-драйв',
 );
 ?>
-HOME
+Заявки на тест-драйв
