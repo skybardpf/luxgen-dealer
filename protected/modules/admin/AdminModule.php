@@ -4,11 +4,10 @@
  */
 class AdminModule extends CWebModule
 {
-//    public $layouts = 'layouts/main';
     public $baseAssets = null;
 
     public $breadcrumbs = array();
-//
+
     public $homeUrl;
 
     public function init()
@@ -27,6 +26,7 @@ class AdminModule extends CWebModule
             ),
             'user'=>array(
                 'class' => 'CWebUser',
+                'allowAutoLogin' => true,
                 'stateKeyPrefix' => 'admin',
                 'loginUrl'=>Yii::app()->createUrl($this->getId().'/login/login'),
             ),

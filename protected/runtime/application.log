@@ -2049,3 +2049,141 @@ Stack trace:
 REQUEST_URI=/admin/test_drive
 HTTP_REFERER=http://luxgen-yii/admin/press_about_us
 ---
+2013/08/18 16:42:12 [error] [exception.CException] exception 'CException' with message 'Для использования авторизации, построенной на cookie, свойство CWebUser.allowAutoLogin должно принять значение "true".' in /usr/share/php5/libs/yii/framework/web/auth/CWebUser.php:240
+Stack trace:
+#0 /home/leadert/webserver/luxgen-yii/www/protected/models/LoginForm.php(71): CWebUser->login(Object(AdminIdentity), 2592000)
+#1 /home/leadert/webserver/luxgen-yii/www/protected/modules/admin/controllers/Login/LoginAction.php(25): LoginForm->login()
+#2 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): LoginAction->run()
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /usr/share/php5/libs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(LoginAction))
+#5 /usr/share/php5/libs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /usr/share/php5/libs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /usr/share/php5/libs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /usr/share/php5/libs/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(LoginAction), Array)
+#11 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#12 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/login/log...')
+#13 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/admin/login/login
+HTTP_REFERER=http://luxgen-yii/admin/login/login
+---
+2013/08/18 16:54:21 [error] [exception.CException] exception 'CException' with message 'В представлении контроллера TbActiveForm обнаружен лишний вызов endWidget().' in /usr/share/php5/libs/yii/framework/web/CBaseController.php:210
+Stack trace:
+#0 /home/leadert/webserver/luxgen-yii/www/protected/views/site/test_drive.php(137): CBaseController->endWidget()
+#1 /usr/share/php5/libs/yii/framework/web/CBaseController.php(126): require('/home/leadert/w...')
+#2 /usr/share/php5/libs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/leadert/w...', NULL, true)
+#3 /usr/share/php5/libs/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/leadert/w...', NULL, true)
+#4 /usr/share/php5/libs/yii/framework/web/CController.php(782): CController->renderPartial('test_drive', NULL, true)
+#5 /home/leadert/webserver/luxgen-yii/www/protected/controllers/Site/TestDriveAction.php(12): CController->render('test_drive')
+#6 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): TestDriveAction->run()
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#8 /usr/share/php5/libs/yii/framework/web/CController.php(286): CController->runAction(Object(TestDriveAction))
+#9 /usr/share/php5/libs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(TestDriveAction), Array)
+#10 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): CController->run('test_drive')
+#11 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/test_drive')
+#12 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/site/test_drive
+HTTP_REFERER=http://luxgen-yii/site/test_drive
+---
+2013/08/18 17:01:14 [error] [php] Object of class TestDrive could not be converted to string (/usr/share/php5/libs/yii/framework/web/helpers/CHtml.php:2155)
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/helpers/CHtml.php(596): inputField()
+#1 /home/leadert/webserver/luxgen-yii/www/protected/views/site/test_drive.php(35): textField()
+#2 /usr/share/php5/libs/yii/framework/web/CBaseController.php(126): require()
+#3 /usr/share/php5/libs/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /usr/share/php5/libs/yii/framework/web/CController.php(869): SiteController->renderFile()
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /home/leadert/webserver/luxgen-yii/www/protected/controllers/Site/TestDriveAction.php(19): SiteController->render()
+#7 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): TestDriveAction->run()
+#8 /usr/share/php5/libs/yii/framework/web/CController.php(308): TestDriveAction->runWithParams()
+#9 /usr/share/php5/libs/yii/framework/web/CController.php(286): SiteController->runAction()
+#10 /usr/share/php5/libs/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/test_drive
+in /home/leadert/webserver/luxgen-yii/www/protected/views/site/test_drive.php (35)
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/Site/TestDriveAction.php (19)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/18 19:57:46 [error] [php] Missing argument 2 for CHtml::listData(), called in /home/leadert/webserver/luxgen-yii/www/protected/views/site/test_drive.php on line 81 and defined (/usr/share/php5/libs/yii/framework/web/helpers/CHtml.php:2073)
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /usr/share/php5/libs/yii/framework/web/CController.php(869): SiteController->renderFile()
+#2 /usr/share/php5/libs/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#3 /home/leadert/webserver/luxgen-yii/www/protected/controllers/Site/TestDriveAction.php(19): SiteController->render()
+#4 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): TestDriveAction->run()
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(308): TestDriveAction->runWithParams()
+#6 /usr/share/php5/libs/yii/framework/web/CController.php(286): SiteController->runAction()
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#8 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#9 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/test_drive
+in /home/leadert/webserver/luxgen-yii/www/protected/views/site/test_drive.php (81)
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/Site/TestDriveAction.php (19)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/18 20:28:54 [error] [php] Object of class TestDrive could not be converted to string (/usr/share/php5/libs/yii/framework/web/helpers/CHtml.php:2155)
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/helpers/CHtml.php(596): inputField()
+#1 /home/leadert/webserver/luxgen-yii/www/protected/views/site/test_drive.php(55): textField()
+#2 /usr/share/php5/libs/yii/framework/web/CBaseController.php(126): require()
+#3 /usr/share/php5/libs/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#4 /usr/share/php5/libs/yii/framework/web/CController.php(869): SiteController->renderFile()
+#5 /usr/share/php5/libs/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#6 /home/leadert/webserver/luxgen-yii/www/protected/controllers/Site/TestDriveAction.php(36): SiteController->render()
+#7 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): TestDriveAction->run()
+#8 /usr/share/php5/libs/yii/framework/web/CController.php(308): TestDriveAction->runWithParams()
+#9 /usr/share/php5/libs/yii/framework/web/CController.php(286): SiteController->runAction()
+#10 /usr/share/php5/libs/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/test_drive
+in /home/leadert/webserver/luxgen-yii/www/protected/views/site/test_drive.php (55)
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/Site/TestDriveAction.php (36)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/18 20:35:48 [error] [php] include(range.php): failed to open stream: No such file or directory (/usr/share/php5/libs/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/validators/CValidator.php(186): import()
+#1 /usr/share/php5/libs/yii/framework/base/CModel.php(287): createValidator()
+#2 /usr/share/php5/libs/yii/framework/base/CModel.php(260): TestDrive->createValidators()
+#3 /usr/share/php5/libs/yii/framework/base/CModel.php(579): TestDrive->getValidators()
+#4 /usr/share/php5/libs/yii/framework/base/CModel.php(500): TestDrive->getSafeAttributeNames()
+#5 /home/leadert/webserver/luxgen-yii/www/protected/controllers/Site/TestDriveAction.php(21): TestDrive->setAttributes()
+#6 /usr/share/php5/libs/yii/framework/web/actions/CAction.php(76): TestDriveAction->run()
+#7 /usr/share/php5/libs/yii/framework/web/CController.php(308): TestDriveAction->runWithParams()
+#8 /usr/share/php5/libs/yii/framework/web/CController.php(286): SiteController->runAction()
+#9 /usr/share/php5/libs/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/test_drive
+in /home/leadert/webserver/luxgen-yii/www/protected/controllers/Site/TestDriveAction.php (21)
+in /home/leadert/webserver/luxgen-yii/www/public/index.php (13)
+2013/08/18 20:39:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "test_drive".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('test_drive')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test_drive
+HTTP_REFERER=http://luxgen-yii/site/test_drive
+---
+2013/08/18 20:39:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "test_drive".' in /usr/share/php5/libs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/php5/libs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('test_drive')
+#1 /usr/share/php5/libs/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/leadert/webserver/luxgen-yii/www/public/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/test_drive
+HTTP_REFERER=http://luxgen-yii/site/test_drive
+---
